@@ -1,0 +1,123 @@
+<html>
+<head>
+	<title>Harshal</title>
+	<style>
+		body{
+			background: Black;
+		}
+	</style>
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+	<meta name="veiwport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,100&family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+
+	<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+	<script src="https://www.momentcrm.com/embed"></script>
+	<script>
+	  MomentCRM('init', {
+		'teamVanityId': 'wearefriends',
+		'doChat': true,
+		'doTracking': true,
+	  });
+	</script>
+</head>
+<body text=#f3c654>
+<section id="banner">
+	<div class="logo">
+	<img src="logo.png" class="logo">
+	</div>
+	<div class="banner-text" text=#f3c654>
+		<h1>Harshal</h1>
+		<p>Artist/Interest in almost everything</p>
+		<div class="banner-btn">
+			
+		</div>
+	</div>
+</section>
+<div id="sideNav">
+	<nav>
+	<ul>
+		<li><a href="#banner">Home</a></li>
+		<li><a href="#service">Me</a></li>
+		<li><a href="#me">About me</a></li>
+	</ul>
+	</nav>
+</div>
+<div id="menuBtn">
+	<img src="menu.png" id="menu">
+</div>
+
+<!--Feature-->
+
+
+<!--Service-->
+
+<secion id="service">
+	<section id="feature">
+	<div class="title-text">
+	<p>I am</p>
+	<h1>Harshal:</h1>
+	</div>
+	<div class="service-box">
+		<div class="single-service">
+			<img src="pic-6.jpg">
+			<div class="overlay"></div>
+			<div class="service-desc">
+				<h3>6.Harshal</h3>
+				<hr>
+				<p>Artist/Interest in almost everything</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--me-->
+<section id="me">
+	<section id="me-info">
+	<div class="title-text">
+	<p>About</p>
+	<h1>Me:</h1>
+	</div>
+	<div class="info">
+		<p>"Hello, I'm Harshal. While tech isn't my forte, I excel in the art of drawing and crafting intricate origamis. My curiosity spans across diverse interests, fueling my enthusiasm for learning about almost anything. Join me on my creative journey as I explore various artistic endeavors and delve into a world of endless possibilities!"</p>
+		</div>
+</section>
+
+<section id="banne">
+<div class="logo">
+<img src="logo.png" class="logo">
+</div>
+<div class="banne-text" text=#f3c654>
+	<div class="banne-btn">
+			<a href="friends.html"><span></span>Go Back</a>
+	</div>
+</div>
+</section>
+
+<script>
+var menuBtn = document.getElementById("menuBtn")
+var sideNav = document.getElementById("sideNav")
+var menu = document.getElementById("menu")
+
+sideNav.style.right= "-250px";
+
+menuBtn.onclick = function(){
+	if(sideNav.style.right == "-250px"){
+		sideNav.style.right = "0";
+		menu.src = "close.png"
+	}
+	else{
+		sideNav.style.right = "-250px";
+		menu.src = "menu.png"
+	}
+}
+var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 500,
+	speedAsDuration: true
+});
+</script>
+
+</body>
+</html>
